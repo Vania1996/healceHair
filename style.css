@@ -1,0 +1,114 @@
+.flex{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;     
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f4a406;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color: rgb(154, 159, 163);
+    display: inline-block;
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+
+}
+
+header a:hover{
+    color: #f4a406;
+    transform: scale(1.08);
+
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f4a406;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #cb9f46;
+    transform: scale(1.05);
+}
+
+
+
+/* topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #f4a406;
+    font-size: 60px;
+}
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 4s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
