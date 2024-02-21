@@ -252,11 +252,14 @@ section.portiforio .flex{
 .meus-trabalhos{
     background-color:#f4a5062e;
 }
+.sobre img{
+    width: 400px;
+}
 
 /* deixando responsivo */
 
 @media screen and (max-width: 1000px){
-    .menu-desktop, .btn-contato{
+    .menu-desktop{
         display: none;
     }
     .flex{
@@ -266,4 +269,8 @@ section.portiforio .flex{
         flex-direction: column;
         width: 300px;
     }
+    .sobre img{
+        width: 300px;
+    }
 }
+
