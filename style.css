@@ -235,7 +235,7 @@ section.portiforio{
     width: 360px;
     height: 460px;
     background-size: cover;
-    background-position: 100% 0%;
+    background-position: 100% 100%;
     transform: .5s;
 }
 
@@ -247,4 +247,23 @@ section.portiforio .flex{
 
 .flex .img-port{
     margin-left: 30px;
+}
+
+.meus-trabalhos{
+    background-color:#f4a5062e;
+}
+
+/* deixando responsivo */
+
+@media screen and (max-width: 1000px){
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .img-port{
+        flex-direction: column;
+        width: 300px;
+    }
 }
