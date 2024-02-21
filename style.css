@@ -5,7 +5,7 @@
 h2#titulo{
     color: #fff;
     font-size: 38px;
-    text-align: center;
+    text-align: left;
 }
 
 h2#titulo span{
@@ -39,6 +39,7 @@ body{
 
 header{
     padding: 40px 4%;
+    background-color: #f4a406;
 }
 
 header > .interface{
@@ -47,7 +48,7 @@ header > .interface{
     justify-content: space-between;
 }
 header a {
-    color: rgb(154, 159, 163);
+    color: black;
     display: inline-block;
     text-decoration: none;
 }
@@ -63,9 +64,12 @@ header nav ul li {
 }
 
 header a:hover{
-    color: #f4a406;
+    color: #ffffff;
     transform: scale(1.08);
 
+}
+header img{
+    border-radius: 40px;
 }
 .btn-contato button{
     padding: 10px 40px;
@@ -76,12 +80,15 @@ header a:hover{
     border-radius: 30px;
     cursor: pointer;
 }
-.btn-contato button:hover{
+button:hover{
     box-shadow: 0px 0px 8px #cb9f46;
     transform: scale(1.05);
 }
 
-
+header .btn-contato-header{
+    background-color: #000;
+    color:#f4a406
+}
 
 /* topo do site */
 
@@ -126,7 +133,7 @@ section.topo-do-site.flex{
 
 
 section.especialidades{
-    padding: 40px 4%;
+    padding: 80px 4%;
 }
 section.especialidades.flex{
     gap: 60px;
@@ -159,4 +166,85 @@ section.especialidades.flex{
 
 footer{
     background-color: #f4a406;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+section.sobre .flex{
+    gap: 60px;
+}
+
+.txt-sobre h2{
+    font-size: 40px;
+}
+.txt-sobre h2 span{
+    color: #f4a406;
+    display: block;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f4a406;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.especialidades-box li{
+    color: #f4a406;
+}
+.especialidades-box a {
+    color: #cb9f46;
+}
+
+.titulo{
+    color: #fff;
+}
+.portiforio span{
+    color: #f4a406;
+}
+h2 span{
+align-items: center;
+}
+
+section.portiforio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #cb9f4665;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transform: .5s;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+section.portiforio .flex{
+}
+
+.flex .img-port{
+    margin-left: 30px;
 }
