@@ -1,3 +1,4 @@
+
 .flex{
     display: flex;
 }
@@ -258,7 +259,10 @@ section.portiforio .flex{
 
 /* deixando responsivo */
 
-@media screen and (max-width: 1000px){
+ @media screen and (max-width: 1000px){
+    body{
+        flex-direction: column;
+    }
     .menu-desktop{
         display: none;
     }
@@ -274,3 +278,62 @@ section.portiforio .flex{
     }
 }
 
+
+
+
+/* 
+CARROUSEL  */
+
+  
+  .carousel {
+    position: relative;
+    width: 40%;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    margin-top: 100px;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
